@@ -114,6 +114,7 @@ app.post('/admin/courses', authenticateJwt, async (req, res) => {
 app.get('/admin/courses/:courseId', authenticateJwt, async (req, res) => {
   const course = await Course.findById(req.params.courseId);
   res.json({ course });
+  console.log(course)
 });
 
 app.put('/admin/courses/:courseId', authenticateJwt, async (req, res) => {
