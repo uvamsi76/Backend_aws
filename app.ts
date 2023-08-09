@@ -187,6 +187,6 @@ app.get('/users/purchasedCourses', authenticateJwt, async (req, res) => {
 });
 
 app.get('/',(req,res)=>{
-  res.json("working fine mowa 5")
+  res.json("working fine mowa 6")
 })
 app.listen(3000, () => console.log('Server running on port 3000'));
