@@ -190,4 +190,7 @@ app.get('/users/purchasedCourses', authenticateJwt, (req, res) => __awaiter(void
         res.status(403).json({ message: 'User not found' });
     }
 }));
+app.get('/', (req, res) => {
+    res.json("working fine mowa 3");
+});
 app.listen(3000, () => console.log('Server running on port 3000'));
